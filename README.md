@@ -1,2 +1,0 @@
-# andalsomuchcattle
-A Web Comic
