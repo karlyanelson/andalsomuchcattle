@@ -1,0 +1,21 @@
+---
+layout: comic
+title:  "This is a comic title"
+date:   2016-07-13
+categories: test1, test2
+---
+<article class="comic-wrapper">
+
+  <header class="comic-header">
+    <h1 class="comic-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="comic-content">
+    {{ content }}
+  </div>
+
+  <div class="comic-footer">
+    <p class="comic-meta"><time>{{ page.date | date: "%b %-d, %Y" }}</time></p>
+  </div>
+
+</article>
