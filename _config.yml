@@ -11,8 +11,12 @@ email: karlyanelson@gmail.com
 description: > # A Bible webcomic
 baseurl: "/andalsomuchcattle" # the subpath of your site, e.g. /blog
 url: "http://karlynelson.com" # the base hostname & protocol for your site
-twitter_username: KarlyANelson
-github_username:  karlyanelson
+
+# Gems
+gems: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
+
+# Pagination
+paginate: 1

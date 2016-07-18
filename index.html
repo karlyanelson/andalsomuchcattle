@@ -4,21 +4,36 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- {% for post in site.posts limit:1 %}
+  <div>{{post.content}}</div>
+  {% endfor %} -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1>{{ post.title }}</h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <h4>{{post.categories}}</h4>
-      </li>
-    {% endfor %}
-  </ul>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend:site.baseurl}}" class="prev">Older</a>
+  {% else %}
+    <span class="prev ">Older</span>
+  {% endif %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend:site.baseurl }}" class="next">Newer</a>
+  {% else %}
+    <span class="next">Newer</span>
+  {% endif %}
+</div>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

@@ -1,21 +1,17 @@
 ---
-layout: comic
-title:  "This is a comic title"
-date:   2016-07-13
-categories: test1, test2
+layout: post
+title:  "test"
+date:   2016-07-13 15:12:49 -0500
+categories: jekyll update
 ---
-<article class="comic-wrapper">
 
-  <header class="comic-header">
-    <h1 class="comic-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="comic-content">
-    {{ content }}
+<div class="comic">
+  <div class="comic-strip">
+    <h2 class="comic-strip-title">This is a funny comic</h2>
+    <div class="comic-strip-frame"></div>
+    <div class="comic-strip-frame"></div>
+    <div class="comic-strip-frame"></div>
+    <div class="comic-strip-frame"></div>
+    <div class="comic-strip-frame"></div>
   </div>
-
-  <div class="comic-footer">
-    <p class="comic-meta"><time>{{ page.date | date: "%b %-d, %Y" }}</time></p>
-  </div>
-
-</article>
+</div>
