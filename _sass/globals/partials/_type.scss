@@ -1,0 +1,33 @@
+h1,
+h2{
+  font-family: $font-family-gothic;
+}
+
+h1{
+  font-size: $font-size-xxlg;
+}
+
+h2{
+  font-size: $font-size-xlg;
+}
+
+h3,
+h4,
+h5,
+h6{
+  font-family: $font-family-display;
+  font-weight: $display-regular;
+}
+
+body,
+span,
+p {
+  font-family: $font-family-sans;
+  font-size: $font-size-md;
+}
+
+button,
+a {
+  font-family: $font-family-display;
+  font-weight: $display-bold;
+}

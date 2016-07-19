@@ -1,0 +1,16 @@
+@import 'helpers/index';
+
+.comic {
+  max-width: 1000rem;
+}
+
+.comic-strip{
+  @include display(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+}
+
+.comic-strip-frame{
+  @include flex(0 0 300px);
+  min-height: 300px;
+}

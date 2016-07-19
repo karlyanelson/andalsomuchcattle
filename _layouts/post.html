@@ -1,11 +1,38 @@
 ---
 layout: default
 ---
+<div class="page-nav">
+  {% if site.posts.last.permalink == page.permalink %}
+  <button disabled="true">Alpha</button>
+  {% else %}
+  <a href="{{site.posts.last.url | prepend:site.baseurl}}">Alpha</a>
+  {% endif %}
+
+  {% if page.previous.url %}
+  <a href="{{page.previous.url | prepend:site.baseurl}}">Previous</a>
+  {% else %}
+  <button disabled="true">Previous</button>
+  {% endif %}
+
+  {% if page.next.url %}
+  <a href="{{page.next.url | prepend:site.baseurl}}">Next</a>
+  {% else %}
+  <button disabled="true">Next</button>
+  {% endif %}
+
+  {% if site.posts.first.permalink == page.permalink %}
+  <button disabled="true">Omega</button>
+  {% else %}
+  <a href="{{site.posts.first.url | prepend:site.baseurl}}">Omega</a>
+  {% endif %}
+</div>
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p>{{page.permalink | prepend: site.baseurl | prepend: site.url}}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">

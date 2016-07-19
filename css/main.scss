@@ -3,9 +3,9 @@
 ---
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "components/comic/index"
-;
+@import 'vendor/normalize/normalize';
+@import 'vendor/bourbon/bourbon';
+
+@import 'globals/index';
+@import 'layout/index';
+@import 'components/index';
