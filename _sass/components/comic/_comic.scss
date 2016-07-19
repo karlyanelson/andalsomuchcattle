@@ -1,16 +1,39 @@
 @import 'helpers/index';
 
-.comic {
-  max-width: 1000rem;
+.comic{
+  margin-left: -($comic-strip-gutter);
+  margin-right: -($comic-strip-gutter);
+  overflow-x: hidden;
 }
 
-.comic-strip{
+.comic-strip,
+.comic-strip-row{
   @include display(flex);
   @include flex-direction(row);
   @include flex-wrap(wrap);
 }
 
+.comic-strip-row{
+  @include flex(1 0 100%);
+}
+
+.comic-strip-title{
+  @include flex(1 0 100%);
+  padding: $comic-strip-gutter;
+  font-size: $font-size-lg;
+}
+
 .comic-strip-frame{
-  @include flex(0 0 300px);
-  min-height: 300px;
+  @include flex(1 1 300px);
+  // border: 1px solid gray;
+  margin: $comic-strip-gutter;
+
+  &.frame-tall{
+    @extend %center;
+    max-width: 800px;
+  }
+
+  img{
+    width: 100%;
+  }
 }

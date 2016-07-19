@@ -1,0 +1,15 @@
+@import "helpers/index";
+
+$max-width: 1400px;
+
+.container{
+  @extend %center;
+  max-width: $max-width;
+  padding: 1rem;
+}
+
+
+.page-nav{
+  @extend %center;
+  text-align: center;
+}
