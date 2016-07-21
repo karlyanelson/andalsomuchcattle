@@ -15,7 +15,6 @@ url: "http://karlynelson.com" # the base hostname & protocol for your site
 # Gems
 gems:
   -jekyll-paginate
-  -octopress-autoprefixer
 
 # Build settings
 markdown: kramdown

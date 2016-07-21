@@ -8,29 +8,23 @@
 
 .comic-strip,
 .comic-strip-row{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  // @include display(flex);
-  // @include flex-direction(row);
-  // @include flex-wrap(wrap);
+  @include display(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
 }
 
 .comic-strip-row{
-  flex:1 0 100%;
-  // @include flex(1 0 100%);
+  @include flex(1 0 100%);
 }
 
 .comic-strip-title{
-  flex: 1 0 100%;
-  // @include flex(1 0 100%);
+  @include flex(1 0 100%);
   padding: $comic-strip-gutter;
   font-size: $font-size-lg;
 }
 
 .comic-strip-frame{
-  flex: 1 1 300px;
-  // @include flex(1 1 300px);
+  @include flex(1 1 300px);
   margin: $comic-strip-gutter;
   border: 4px solid gray;
 
