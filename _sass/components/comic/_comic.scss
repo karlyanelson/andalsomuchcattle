@@ -11,6 +11,8 @@
   @include display(flex);
   @include flex-direction(row);
   @include flex-wrap(wrap);
+  // @include flex(1 0 100%);
+  width: 100%;
 }
 
 .comic-strip-row{
@@ -25,19 +27,26 @@
 
 .comic-strip-frame{
   @include flex(1 1 300px);
-  margin: $comic-strip-gutter;
-  border: 4px solid gray;
+  padding: $comic-strip-gutter;
 
   &.frame-tall{
     @extend %center;
     max-width: 800px;
   }
 
-  &.frame-no-border{
-    border: none;
-  }
-
   img{
     width: 100%;
+  }
+
+  &.frame-2{
+    @include flex-basis(50%);
+  }
+
+  &.frame-3{
+    @include flex-basis(33%);
+  }
+
+  &.frame-4{
+    @include flex-basis(25%);
   }
 }

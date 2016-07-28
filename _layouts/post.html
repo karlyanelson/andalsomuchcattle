@@ -36,7 +36,19 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    <div class="comic">
+      <div class="comic-strip">
+        {% for item in page.images %}
+        <div class="comic-strip-frame {% if item.frame-tall %}frame-tall{% endif %} {% if item.frames == '2' %}frame-2{% endif %} {% if item.frames == '3' %}frame-3{% endif %} {% if item.frames == '4' %}frame-4{% endif %}">
+          <img alt="{{item.alt}}" src="{{site.baseurl}}/images/{{page.image_folder}}/{{item.url}}"/>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="post-description">
+      {{ content }}
+    </div>
   </div>
 
 </article>
