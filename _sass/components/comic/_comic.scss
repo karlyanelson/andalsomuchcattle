@@ -11,7 +11,7 @@
   @include display(flex);
   @include flex-direction(row);
   @include flex-wrap(wrap);
-  // @include flex(1 0 100%);
+  @include flex(1 0 100%);
   width: 100%;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .comic-strip-frame{
-  @include flex(1 1 300px);
+  @include flex(1 1 auto);
   padding: $comic-strip-gutter;
 
   &.frame-tall{
@@ -38,15 +38,48 @@
     width: 100%;
   }
 
-  &.frame-2{
+  &.frame-1-1{
+    @include flex-basis(100%);
+  }
+
+  &.frame-3-4{
+    @include flex-basis(75%);
+  }
+
+  &.frame-2-3{
+    @include flex-basis(66%);
+  }
+
+  &.frame-1-2{
     @include flex-basis(50%);
   }
 
-  &.frame-3{
+  &.frame-1-3{
     @include flex-basis(33%);
   }
 
-  &.frame-4{
+  &.frame-1-4{
     @include flex-basis(25%);
+  }
+}
+
+@media (max-width: 700px){
+  .comic-strip-frame{
+    &.frame-1-4{
+      @include flex-basis(50%);
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .comic-strip-frame{
+    &.frame-3-4,
+    &.frame-2-3,
+    &.frame-1-2,
+    &.frame-1-3,
+    &.frame-1-4{
+      @include flex-basis(100%);
+      min-width: 100%;
+    }
   }
 }

@@ -31,15 +31,14 @@ layout: default
 
   <header class="post-header">
     <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <p>{{page.permalink | prepend: site.baseurl | prepend: site.url}}</p>
+    <p class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     <div class="comic">
       <div class="comic-strip">
         {% for item in page.images %}
-        <div class="comic-strip-frame {% if item.frame-tall %}frame-tall{% endif %} {% if item.frames == '2' %}frame-2{% endif %} {% if item.frames == '3' %}frame-3{% endif %} {% if item.frames == '4' %}frame-4{% endif %}">
+        <div class="comic-strip-frame {{item.frame_type}} {% if item.frame_tall %}frame-tall{% endif %}">
           <img alt="{{item.alt}}" src="{{site.baseurl}}/images/{{page.image_folder}}/{{item.url}}"/>
         </div>
         {% endfor %}
@@ -49,6 +48,9 @@ layout: default
     <div class="post-description">
       {{ content }}
     </div>
+    
+    <p class="post-permalink">Permalink: <span class="permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</span></p>
+
   </div>
 
 </article>
