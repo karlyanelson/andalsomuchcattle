@@ -1,0 +1,38 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+.btn {
+  @include button-reset();
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 12px 16px;
+  text-align: center;
+  // text-transform: uppercase;
+  background-color: sienna;
+  color: white;
+  border-radius: .5rem;
+  font-weight: $sans-light;
+  letter-spacing: .1rem;
+  border-bottom: 4px solid saddlebrown;
+
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    background-color: saddlebrown;
+    color: white;
+    border-bottom: 4px solid black;
+  }
+
+  &:active{
+    text-decoration: none;
+    color: white;
+    background-color: saddlebrown;
+    border-bottom: none;
+    position: relative;
+  }
+}
+
+.btn[disabled]{
+  background-color: tan;
+  border: none;
+}

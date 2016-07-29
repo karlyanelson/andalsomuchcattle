@@ -1,31 +1,7 @@
 ---
 layout: default
 ---
-<div class="page-nav">
-  {% if site.posts.last.permalink == page.permalink %}
-  <button disabled="true">Alpha</button>
-  {% else %}
-  <a href="{{site.posts.last.url | prepend:site.baseurl}}">Alpha</a>
-  {% endif %}
-
-  {% if page.previous.url %}
-  <a href="{{page.previous.url | prepend:site.baseurl}}">Previous</a>
-  {% else %}
-  <button disabled="true">Previous</button>
-  {% endif %}
-
-  {% if page.next.url %}
-  <a href="{{page.next.url | prepend:site.baseurl}}">Next</a>
-  {% else %}
-  <button disabled="true">Next</button>
-  {% endif %}
-
-  {% if site.posts.first.permalink == page.permalink %}
-  <button disabled="true">Omega</button>
-  {% else %}
-  <a href="{{site.posts.first.url | prepend:site.baseurl}}">Omega</a>
-  {% endif %}
-</div>
+{% include post-nav.html %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -38,7 +14,9 @@ layout: default
     <div class="comic">
       <div class="comic-strip">
         {% for item in page.images %}
+        {% if item.row_title %}<h3 class="comic-strip-row-title">{{item.row_title}}</h3>{% endif %}
         <div class="comic-strip-frame {{item.frame_type}} {% if item.frame_tall %}frame-tall{% endif %}">
+          {% if item.frame_title %}<h3 class="comic-strip-frame-title">{{item.frame_title}}</h3>{% endif %}
           <img alt="{{item.alt}}" src="{{site.baseurl}}/images/{{page.image_folder}}/{{item.url}}"/>
         </div>
         {% endfor %}
@@ -48,9 +26,11 @@ layout: default
     <div class="post-description">
       {{ content }}
     </div>
-    
+
     <p class="post-permalink">Permalink: <span class="permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</span></p>
 
   </div>
 
 </article>
+
+{% include post-nav.html %}

@@ -1,0 +1,36 @@
+.post{
+  background-color: white;
+  padding: 16px 24px;
+  margin: 16px 0px;
+  border-bottom: 2px solid wheat;
+}
+
+.post-nav{
+  @extend %center;
+  text-align: center;
+}
+
+.post-header{
+  margin-top: 24px;
+}
+
+.post-title,
+.post-date,
+.post-permalink{
+  text-align: center;
+}
+
+.post-description{
+  @extend %center;
+  margin-top: 24px;
+  max-width: $max-width;
+  padding: 8px 16px;
+  // background-color: lightgray;
+  border: 6px double wheat;
+}
+
+.permalink{
+  @include word-wrap(break-word);
+  display: block;
+  font-size: $font-size-sm;
+}

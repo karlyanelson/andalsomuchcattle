@@ -1,0 +1,16 @@
+a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-weight: $sans-semibold;
+
+  &:hover,
+  &:focus{
+    color: skyblue;
+    text-decoration: underline;
+  }
+
+  &:active{
+    color: steelblue;
+    text-decoration: underline;
+  }
+}

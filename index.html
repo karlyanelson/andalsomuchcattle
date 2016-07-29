@@ -2,18 +2,22 @@
 layout: default
 ---
 
-<div class="page-nav">
-  <a href="{{site.posts.last.url | prepend:site.baseurl}}">Alpha</a>
-
-  {% if site.posts[1].url %}
-  <a href="{{site.posts[1].url | prepend:site.baseurl}}">Previous</a>
+<div class="post-nav">
+  {% if site.posts.last.url == site.posts[0].url %}
+  <button class="btn" disabled="true">&alpha;</button>
   {% else %}
-  <button disabled="true">Previous</button>
+  <a class="btn" href="{{site.posts.last.url | prepend:site.baseurl}}">&alpha;</a>
   {% endif %}
 
-  <button disabled="true">Next</button>
+  {% if site.posts[1].url %}
+  <a class="btn" href="{{site.posts[1].url | prepend:site.baseurl}}">Previous</a>
+  {% else %}
+  <button class="btn" disabled="true">Previous</button>
+  {% endif %}
 
-  <button disabled="true">Omega</button>
+  <button class="btn" disabled="true">Next</button>
+
+  <button class="btn" disabled="true">&Omega;</button>
 </div>
 
 
@@ -23,12 +27,28 @@ layout: default
 
   <header class="post-header">
     <h2 class="post-title" itemprop="name headline">{{ post.title }}</h2>
-    <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
-    <p>{{post.permalink | prepend: site.baseurl | prepend: site.url}}</p>
+    <p class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ post.content }}
+    <div class="comic">
+      <div class="comic-strip">
+        {% for item in post.images %}
+        {% if item.row_title %}<h3 class="comic-strip-row-title">{{item.row_title}}</h3>{% endif %}
+        <div class="comic-strip-frame {{item.frame_type}} {% if item.frame_tall %}frame-tall{% endif %}">
+          {% if item.frame_title %}<h3 class="comic-strip-frame-title">{{item.frame_title}}</h3>{% endif %}
+          <img alt="{{item.alt}}" src="{{site.baseurl}}/images/{{post.image_folder}}/{{item.url}}"/>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="post-description">
+      {{ post.content }}
+    </div>
+
+    <p class="post-permalink">Permalink: <span class="permalink">{{post.permalink | prepend: site.baseurl | prepend: site.url}}</span></p>
+
   </div>
 
 </article>

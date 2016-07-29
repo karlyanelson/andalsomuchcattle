@@ -1,6 +1,8 @@
 @import "helpers/index";
 
-$max-width: 1000px;
+body{
+  background-color: antiquewhite;
+}
 
 .container{
   @extend %center;
@@ -8,20 +10,9 @@ $max-width: 1000px;
   padding: 1rem;
 }
 
-.page-nav{
-  @extend %center;
-  text-align: center;
-}
-
-.post-title,
-.post-date,
-.post-permalink{
-  text-align: center;
-}
-
-.post-description{
-  @extend %center;
-  max-width: $max-width;
-  padding: 24px;
-  background-color: lightgray;
+@media (max-width: 750px){
+  .container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
