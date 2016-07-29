@@ -81,5 +81,10 @@
       @include flex-basis(100%);
       min-width: 100%;
     }
+
+    &.frame-vs{
+      @include flex-basis(50%);
+      min-width: 50%;
+    }
   }
 }
