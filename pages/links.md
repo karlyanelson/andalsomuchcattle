@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Links
+title: Funny Links
 permalink: /some-funny-links/
 ---
 
