@@ -34,8 +34,10 @@
 }
 
 .site-nav-link{
-  text-transform: uppercase;
-  letter-spacing: .05rem;
+  font-family: $font-family-gothic;
+  font-size: $font-size-lg;
+  // text-transform: uppercase;
+  // letter-spacing: .05rem;
   background-color: transparent;
   border-radius: .5rem;
   color: sienna;
