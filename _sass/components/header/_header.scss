@@ -1,12 +1,30 @@
 .site-header{
-  // @include display(flex);
   @extend %center;
-  max-width: 1200px;
+  max-width: 1100px;
   background-color: wheat;
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 24px;
+  border-bottom: 2px solid tan;
+  position: relative;
 }
+
+// .site-header-banner-right,
+// .site-header-banner-left{
+//   height: 196px;
+//   width: 200px;
+//   background-color: sienna;
+//   position: absolute;
+//   top: 80px;
+// }
+//
+// .site-header-banner-right{
+//   right: -100px;
+// }
+//
+// .site-header-banner-left{
+//   left: -100px;
+// }
 
 .site-title,
 .site-nav{
@@ -27,6 +45,10 @@
     color: saddlebrown;
   }
 
+  &.selected{
+    color: blue;
+  }
+
 }
 
 .site-nav{
@@ -37,7 +59,7 @@
   font-family: $font-family-gothic;
   font-size: $font-size-lg;
   // text-transform: uppercase;
-  // letter-spacing: .05rem;
+  letter-spacing: .05rem;
   background-color: transparent;
   border-radius: .5rem;
   color: sienna;
@@ -52,5 +74,22 @@
   &:active{
     background-color: rgba(250, 235, 215, .75);
     color: sienna;
+  }
+}
+
+@media (max-width: 700px){
+  .site-header{
+    margin: 0px;
+    padding: 16px;
+  }
+  .site-title-link{
+    font-size: $font-size-lg;
+  }
+  .site-nav{
+    margin-top: 12px;
+  }
+  .site-nav-link{
+    font-size: $font-size-md;
+    padding: 8px;
   }
 }
