@@ -22,15 +22,25 @@ layout: default
         {% endfor %}
       </div>
     </div>
-
-    <div class="post-description">
-      {{ content }}
-    </div>
-
-    <p class="post-permalink">Permalink: <span class="permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</span></p>
-
   </div>
 
 </article>
 
+<div class="post-share">
+  <div class="share-permalink">
+    <p class="post-share-title">Permanent link to this comic</p>
+    <button class="post-share-url btn-copy permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</button>
+  </div>
+
+  <div class="share-image">
+    <p class="post-share-title">Image URL</p>
+    <button class="post-share-url btn-copy image-link">{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}</button>
+  </div>
+
+</div>
+
 {% include post-nav.html %}
+
+<div class="post-description">
+  {{ content }}
+</div>

@@ -45,22 +45,52 @@
   max-width: $max-width;
   padding: 8px 16px;
   border: 6px double wheat;
+
+  a {
+    @extend .link;
+  }
 }
 
-.permalink{
-  @include word-wrap(break-word);
-  display: block;
+
+//SHARING POSTS
+.post-share{
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-bottom: 24px;
+}
+
+.share-permalink,
+.share-image{
+  @include flex(1 1 auto);
+  text-align: center;
+  margin: 0px 16px;
+}
+
+.post-share-title{
+  margin-bottom: 0px;
   font-size: $font-size-sm;
 }
 
-@media (max-width: 700px){
-  .post{
-    padding-left: 8px;
-    padding-right: 8px;
+.post-share-url{
+  @include button-reset();
+  @include word-wrap(break-word);
+  font-family: $font-family-sans;
+  font-weight: $sans-semibold;
+  color: sienna;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid sienna;
+  border-radius: 1rem;
+  padding: 8px 16px;
+  font-size: $font-size-sm;
+
+  &:hover,
+  &:focus{
+    background-color: sienna;
+    color: antiquewhite;
   }
-  .post-description{
-    padding: 8px;
-    border-right: none;
-    border-left: none;
+
+  &:active{
+    background-color: saddlebrown;
   }
 }
