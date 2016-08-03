@@ -31,12 +31,18 @@
 
 .post-header{
   margin-top: $space-lg;
+  color: saddlebrown;
 }
 
 .post-title,
 .post-date,
 .post-permalink{
   text-align: center;
+}
+
+.post-date{
+  font-style: italic;
+  font-weight: $sans-light;
 }
 
 .post-description{
