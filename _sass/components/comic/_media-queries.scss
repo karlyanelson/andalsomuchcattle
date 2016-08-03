@@ -1,7 +1,4 @@
 @media (max-width: 700px){
-  .post-title{
-    font-size: $font-size-lg;
-  }
   .comic-strip-frame{
     &.frame-1-4{
       @include flex-basis(50%);
@@ -26,8 +23,8 @@
     }
   }
 
-  .comic-strip-row-title,
-  .comic-strip-frame-title{
-    font-size: $font-size-lg;
-  }
+  // .comic-strip-row-title,
+  // .comic-strip-frame-title{
+  //   font-size: $font-size-xlg;
+  // }
 }

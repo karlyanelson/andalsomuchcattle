@@ -1,7 +1,7 @@
 .post{
   background-color: white;
-  padding: 16px 24px;
-  margin: 16px 0px;
+  padding: $space-reg $space-lg;
+  margin: $space-reg 0px;
   border-bottom: 2px solid wheat;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .post-header{
-  margin-top: 24px;
+  margin-top: $space-lg;
 }
 
 .post-title,
@@ -41,9 +41,9 @@
 
 .post-description{
   @extend %center;
-  margin-top: 24px;
-  max-width: $max-width;
-  padding: 8px 16px;
+  max-width: 600px;
+  margin-top: $space-lg;
+  padding: $space-sm $space-md;
   border: 6px double wheat;
 
   a {
@@ -56,14 +56,14 @@
 .post-share{
   @include display(flex);
   @include flex-wrap(wrap);
-  margin-bottom: 24px;
+  margin-bottom: $space-lg;
 }
 
 .share-permalink,
 .share-image{
   @include flex(1 1 auto);
   text-align: center;
-  margin: 0px 16px;
+  margin: 0px $space-reg;
 }
 
 .post-share-title{
@@ -77,11 +77,11 @@
   font-family: $font-family-sans;
   font-weight: $sans-semibold;
   color: sienna;
-  margin-top: 8px;
+  margin-top: $space-sm;
   display: inline-block;
   border: 1px solid sienna;
   border-radius: 1rem;
-  padding: 8px 16px;
+  padding: $space-sm $space-reg;
   font-size: $font-size-sm;
 
   &:hover,

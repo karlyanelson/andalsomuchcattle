@@ -2,29 +2,12 @@
   @extend %center;
   max-width: 1100px;
   background-color: wheat;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding: 24px;
+  margin-top: $space-lg;
+  margin-bottom: $space-lg;
+  padding: $space-md;
   border-bottom: 2px solid tan;
   position: relative;
 }
-
-// .site-header-banner-right,
-// .site-header-banner-left{
-//   height: 196px;
-//   width: 200px;
-//   background-color: sienna;
-//   position: absolute;
-//   top: 80px;
-// }
-//
-// .site-header-banner-right{
-//   right: -100px;
-// }
-//
-// .site-header-banner-left{
-//   left: -100px;
-// }
 
 .site-title,
 .site-nav{
@@ -33,7 +16,7 @@
 
 .site-title-link{
   font-family: $font-family-gothic;
-  font-size: $font-size-xxlg;
+  font-size: $font-size-xxxlg;
   color: black;
 
   &:hover,
@@ -52,18 +35,16 @@
 }
 
 .site-nav{
-  margin-top: 24px;
+  margin-top: $space-sm;
 }
 
 .site-nav-link{
   font-family: $font-family-gothic;
   font-size: $font-size-lg;
-  // text-transform: uppercase;
-  letter-spacing: .05rem;
   background-color: transparent;
   border-radius: .5rem;
   color: sienna;
-  padding: 16px;
+  padding: $space-sm $space-md;
 
   &:hover,
   &:focus{
@@ -83,7 +64,7 @@
     padding: 16px;
   }
   .site-title-link{
-    font-size: $font-size-lg;
+    font-size: $font-size-xlg;
   }
   .site-nav{
     margin-top: 12px;

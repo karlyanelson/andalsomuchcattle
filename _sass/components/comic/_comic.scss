@@ -22,7 +22,7 @@
 .comic-strip-row-title,
 .comic-strip-frame-title{
   text-align: center;
-  font-size: $font-size-xlg;
+  // font-size: $font-size-xxlg;
 }
 
 .comic-strip-frame{
@@ -61,6 +61,10 @@
   &.frame-1-4{
     @include flex-basis(25%);
   }
+}
+
+.comic-copyright{
+  text-align: center;
 }
 
 @import 'media-queries';
