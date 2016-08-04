@@ -37,16 +37,28 @@ layout: default
 
 <div class="post-share">
   <div class="share-permalink">
-    <p class="post-share-title">Share Link to Comic</p>
-    <button class="post-share-url btn btn-copy copy-link">Copy Permanent Link</button>
-    <!-- <button class="post-share-url btn-copy permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</button> -->
+    <p class="post-share-title">Permanent link to this comic</p>
+    <!-- Target -->
+    <input class="post-share-url" id="comicLink" value="{{page.permalink | prepend: site.baseurl | prepend: site.url}}">
+
+    <!-- Trigger -->
+    <button class="btn btn-copy" data-clipboard-target="#comicLink">
+        Copy
+    </button>
+
+    <!-- <button class="post-share-url btn-copy" data-clipboard-text="{{page.permalink | prepend: site.baseurl | prepend: site.url}}">Copy Link to Comic</button> -->
   </div>
 
   <div class="share-image">
-    <p class="post-share-title">Share Image</p>
-    <button class="post-share-url btn btn-copy copy-image">Copy Image</button>
-    <button class="post-share-url btn btn-copy copy-link">Copy Image URL</button>
-    <!-- <button class="post-share-url btn-copy image-link">{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}</button> -->
+    <p class="post-share-title">Image URL</p>
+    <!-- Target -->
+    <input class="post-share-url" id="imageURL" value="{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}">
+
+    <!-- Trigger -->
+    <button class="btn btn-copy" data-clipboard-target="#imageURL">
+        Copy
+    </button>
+    <!-- <button class="post-share-url btn-copy" data-clipboard-text="{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}">Copy Image URL</button> -->
   </div>
 
 </div>

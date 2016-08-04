@@ -87,13 +87,19 @@
   margin-top: $space-sm;
 }
 
+input.post-share-url{
+  font-size: $font-size-xsm;
+  padding: $space-xsm $space-sm;
+}
+
 .btn-copy{
   @include button-style(transparent, sienna, true, sienna);
-  padding: $space-sm $space-reg;
-  border-radius: 1rem;
+  padding: $space-xsm $space-sm;
+  border-radius: .25rem;
   font-size: $font-size-xsm;
   font-family: $font-family-sans;
   font-weight: $sans-semibold;
+  text-transform: uppercase;
 
   &:hover,
   &:focus{
