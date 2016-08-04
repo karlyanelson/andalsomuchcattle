@@ -37,13 +37,16 @@ layout: default
 
 <div class="post-share">
   <div class="share-permalink">
-    <p class="post-share-title">Permanent link to this comic</p>
-    <button class="post-share-url btn-copy permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</button>
+    <p class="post-share-title">Share Link to Comic</p>
+    <button class="post-share-url btn btn-copy copy-link">Copy Permanent Link</button>
+    <!-- <button class="post-share-url btn-copy permalink">{{page.permalink | prepend: site.baseurl | prepend: site.url}}</button> -->
   </div>
 
   <div class="share-image">
-    <p class="post-share-title">Image URL</p>
-    <button class="post-share-url btn-copy image-link">{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}</button>
+    <p class="post-share-title">Share Image</p>
+    <button class="post-share-url btn btn-copy copy-image">Copy Image</button>
+    <button class="post-share-url btn btn-copy copy-link">Copy Image URL</button>
+    <!-- <button class="post-share-url btn-copy image-link">{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}</button> -->
   </div>
 
 </div>

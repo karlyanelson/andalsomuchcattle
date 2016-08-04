@@ -11,21 +11,22 @@
 }
 
 .post-nav .btn{
-  @include button-style(sienna, white, true, saddlebrown);
+  @include button-style-shadow(sienna, white, true, saddlebrown);
   margin: 2px;
+  letter-spacing: .1rem;
 
   &:hover,
   &:focus{
-    @include button-style(saddlebrown, white, true, black);
+    @include button-style-shadow(saddlebrown, white, true, black);
   }
 
   &:active{
-    @include button-style(saddlebrown, white, false);
+    @include button-style-shadow(saddlebrown, white, false);
   }
 
   &[disabled],
   &.disabled{
-    @include button-style(tan, white, false);
+    @include button-style-shadow(tan, white, false);
   }
 }
 
@@ -62,12 +63,13 @@
 .post-share{
   @include display(flex);
   @include flex-wrap(wrap);
-  margin-bottom: $space-lg;
+  @include justify-content(center);
+  margin-bottom: $space-xlg;
 }
 
 .share-permalink,
 .share-image{
-  @include flex(1 1 auto);
+  @include flex(0 1 auto);
   text-align: center;
   margin: 0px $space-reg;
 }
@@ -75,28 +77,30 @@
 .post-share-title{
   margin-bottom: 0px;
   font-size: $font-size-sm;
+  font-weight: $sans-light;
+  font-style: italic;
+  color: sienna;
 }
 
 .post-share-url{
-  @include button-reset();
   @include word-wrap(break-word);
+  margin-top: $space-sm;
+}
+
+.btn-copy{
+  @include button-style(transparent, sienna, true, sienna);
+  padding: $space-sm $space-reg;
+  border-radius: 1rem;
+  font-size: $font-size-xsm;
   font-family: $font-family-sans;
   font-weight: $sans-semibold;
-  color: sienna;
-  margin-top: $space-sm;
-  display: inline-block;
-  border: 1px solid sienna;
-  border-radius: 1rem;
-  padding: $space-sm $space-reg;
-  font-size: $font-size-sm;
 
   &:hover,
   &:focus{
-    background-color: sienna;
-    color: antiquewhite;
+    @include button-style(sienna, antiquewhite);
   }
 
   &:active{
-    background-color: saddlebrown;
+    @include button-style(saddlebrown);
   }
 }
