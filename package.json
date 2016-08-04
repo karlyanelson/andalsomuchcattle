@@ -1,0 +1,27 @@
+{
+  "name": "andalsomuchcattle",
+  "version": "1.0.0",
+  "description": "This is a Bible web comic",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlyanelson/andalsomuchcattle.git"
+  },
+  "keywords": [
+    "bible",
+    "web",
+    "comic"
+  ],
+  "author": "Karly Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlyanelson/andalsomuchcattle/issues"
+  },
+  "homepage": "https://github.com/karlyanelson/andalsomuchcattle#readme",
+  "dependencies": {
+    "clipboard": "^1.5.12"
+  }
+}
