@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+{% for page in site.pages %}
+  {% if page.title %}
+  <a class="site-nav-link" href="{{ page.url | prepend: site.baseurl }}">Search by Category</a>
+  {% endif %}
+{% endfor %}
+
+
 {% include post-nav.html %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -45,9 +52,9 @@ layout: default
     <input class="post-share-url" id="comicLink" value="{{page.permalink | prepend: site.baseurl | prepend: site.url}}">
 
     <!-- Trigger -->
-    <button class="btn btn-copy" data-clipboard-target="#comicLink">
+    <!-- <button class="btn btn-copy" data-clipboard-target="#comicLink">
         Copy
-    </button>
+    </button> -->
 
     <!-- <button class="post-share-url btn-copy" data-clipboard-text="{{page.permalink | prepend: site.baseurl | prepend: site.url}}">Copy Link to Comic</button> -->
   </div>
@@ -58,9 +65,9 @@ layout: default
     <input class="post-share-url" id="imageURL" value="{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}">
 
     <!-- Trigger -->
-    <button class="btn btn-copy" data-clipboard-target="#imageURL">
+    <!-- <button class="btn btn-copy" data-clipboard-target="#imageURL">
         Copy
-    </button>
+    </button> -->
     <!-- <button class="post-share-url btn-copy" data-clipboard-text="{{site.baseurl | prepend: site.url}}/images/{{page.image_folder}}/{{page.original_image}}">Copy Image URL</button> -->
   </div>
 

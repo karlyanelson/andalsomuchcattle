@@ -1,0 +1,63 @@
+.site-footer{
+  @extend %center;
+  max-width: $max-width;
+  text-align: center;
+  margin-bottom: $space-lg;
+
+  a{
+    color: sienna;
+    font-weight: bold;
+
+    &:hover,
+    &:focus,
+    &:active{
+      color: saddlebrown;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-description{
+  max-width: 600px;
+  @extend %center;
+  p{
+    color: sienna;
+    font-style: italic;
+    font-size: $font-size-sm;
+  }
+  .bible-verse{
+    font-size: $font-size-xsm;
+    white-space: pre-wrap;
+  }
+}
+
+.footer-contact,
+.footer-links{
+  color: tan;
+  span,
+  .email{
+    font-size: $font-size-sm;
+  }
+}
+
+.footer-links{
+  margin-top: $space-md;
+  span,
+  a{
+    font-size: $font-size-xsm;
+  }
+  ul{
+    margin: 0px;
+    display: inline-block;
+    padding: 0px;
+  }
+  li{
+    list-style: georgian;
+    display: inline-block;
+
+    &:not(&:first-child):before{
+      margin:0 4px;
+      content: '•';
+    }
+  }
+}

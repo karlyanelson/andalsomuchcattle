@@ -1,14 +1,31 @@
 <footer class="site-footer">
-
-  <p>{{ site.description }}</p>
-  <p class="bible-verse">
-    "Our mouths were filled with laughter,
-        our tongues with songs of joy.
-    Then it was said among the nations,
-        'The Lord has done great things for them.'”
-    Psalm 126:2
-  </p>
-
-  <li class="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-
+  <div class="footer-description">
+    <p>{{ site.description }}</p>
+    <!-- <p class="bible-verse">
+      Our mouths were filled with laughter,
+          our tongues with songs of joy.
+      Then it was said among the nations,
+          "The Lord has done great things for them.”
+      Psalm 126:2
+    </p> -->
+    <!-- <p class="bible-verse">
+      Strength and dignity are her clothing, and she laughs at the time to come. Prov. 31:25
+    </p> -->
+    <p class="bible-verse">
+      A merry heart doeth good like a medicine: but a broken spirit drieth the bones. Prov. 17:22
+    </p>
+  </div>
+  <div class="footer-contact">
+    <span>Contact us at: </span><a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+  <div class="footer-links">
+    <span>Some Other Funny People:</span>
+    <ul>
+      <li><a href="">Two Monks Inventing Things</a></li>
+      <li><a href="">Bible Verse</a></li>
+      <li><a href="">Adventures of the Holy Ghost</a></li>
+      <li><a href="">Stuff Christians Like</a></li>
+      <li><a href="">Babylon Bee</a></li>
+    </ul>
+  </div>
 </footer>

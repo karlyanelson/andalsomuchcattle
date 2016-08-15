@@ -8,7 +8,7 @@
 # Site settings
 title: And Also Much Cattle
 email: cattle4dayz@gmail.com
-description: And Also Much Cattle is a webcomic of the Bible, Christianity, and puns by Karly Nelson, with contributions from Caroline Grossman and Kristen O'Neal.
+description: A webcomic of the Bible, Christianity, and puns by Karly Nelson, with contributions from Caroline Grossman and Kristen O'Neal.
 baseurl: "/andalsomuchcattle" # the subpath of your site, e.g. /blog
 url: "http://karlynelson.com" # the base hostname & protocol for your site
 
