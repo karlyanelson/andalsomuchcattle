@@ -4,6 +4,14 @@ title: Funny Links
 permalink: /some-funny-links/
 ---
 
-Basically just the Toast
+#Other Funny People
 
-[jekyllrb.com](http://jekyllrb.com/)
+The Toast
+- Two Monks
+- Bible verse replacements
+
+Adventures of the Holy Ghost
+
+Babylon Bee
+
+Stuff Christians Like

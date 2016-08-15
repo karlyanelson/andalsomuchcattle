@@ -17,6 +17,9 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.original_image %}
+    <img class="post-image" src="{{site.baseurl}}/images/{{page.image_folder}}/{{page.original_image}}" alt="">
+    {% endif %}
     <div class="comic">
       <div class="comic-strip">
         {% for item in page.images %}

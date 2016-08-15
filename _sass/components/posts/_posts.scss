@@ -44,6 +44,7 @@
 .post-date{
   font-style: italic;
   font-weight: $sans-light;
+  font-size: $font-size-xsm;
 }
 
 .post-description{
@@ -56,6 +57,17 @@
   a {
     @extend .link;
   }
+}
+
+.post-content{
+  position: relative;
+  overflow-x: hidden;
+}
+
+.post-image{
+  position: absolute;
+  height: 100%;
+  opacity: 0;
 }
 
 
