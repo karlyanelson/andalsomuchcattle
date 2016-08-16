@@ -7,18 +7,14 @@ a{
 }
 
 .link {
-  color: dodgerblue;
-  text-decoration: none;
-  font-weight: $sans-semibold;
-
+  color: $brown;
+  font-weight: bold;
   &:hover,
   &:focus{
-    color: skyblue;
+    color: $dark-brown;
     text-decoration: underline;
   }
-
   &:active{
-    color: steelblue;
-    text-decoration: underline;
+    color: $black;
   }
 }

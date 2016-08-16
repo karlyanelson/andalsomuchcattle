@@ -8,10 +8,11 @@
 }
 
 .site-title-link{
+  // @include transition(all ease 300ms); //weird safari bug need to fix
   font-family: $font-family-gothic;
   font-size: $font-size-xxxlg;
   padding: $space-lg $space-xxlg;
-  color: black;
+  color: #8b5e3c;
   background-image: url(img/header.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -19,8 +20,12 @@
 
   &:hover,
   &:focus{
-    @include transition(all ease 300ms);
     background-image: url(img/header-hover.svg);
+    color: black;
+  }
+  &:active{
+    background-image: url(img/header.svg);
+    color: #8b5e3c;
   }
 }
 

@@ -2,20 +2,23 @@
   background-color: white;
   padding: $space-reg $space-lg;
   margin: $space-reg 0px;
+  border-radius: .5rem;
   border-bottom: 2px solid wheat;
+  overflow-x: hidden;
 }
 
 .archive-link{
   text-align: center;
   a {
     font-family: $font-family-gothic;
-    color: sienna;
+    color: $brown;
+    font-size: $font-size-md;
     &:hover,
     &:focus{
-      color: saddlebrown;
+      color: $black;
     }
     &:active{
-      color: black;
+      color: $dark-brown;
     }
   }
 }
@@ -25,29 +28,31 @@
   text-align: center;
 }
 
+
 .post-nav .btn{
-  @include button-style-shadow(sienna, white, true, saddlebrown);
+  @include button-style-shadow($light-gold, $white, true, $gold);
   margin: 2px;
   letter-spacing: .1rem;
 
   &:hover,
   &:focus{
-    @include button-style-shadow(saddlebrown, white, true, black);
+    @include button-style-shadow($gold, $white, true, $dark-gold);
   }
 
   &:active{
-    @include button-style-shadow(saddlebrown, white, false);
+    @include button-style-shadow($gold, $white, false);
   }
 
   &[disabled],
   &.disabled{
-    @include button-style-shadow(tan, white, false);
+    @include button-style-shadow($tan, $light-tan, false);
   }
 }
 
 .post-header{
-  margin-top: $space-lg;
-  color: saddlebrown;
+  margin-top: $space-sm;
+  margin-bottom: $space-lg;
+  color: $black;
 }
 
 .post-title,
@@ -59,8 +64,8 @@
 .post-date{
   font-style: italic;
   font-weight: $sans-light;
-  font-size: $font-size-xsm;
-  margin-top: 0px;
+  font-size: $font-size-sm;
+  margin-top: $space-sm;
 }
 
 .post-description{
@@ -68,7 +73,7 @@
   max-width: 600px;
   margin-top: $space-lg;
   padding: $space-sm $space-md;
-  border: 6px double wheat;
+  border: 6px double $gold;
 
   a {
     @extend .link;
@@ -77,7 +82,6 @@
 
 .post-content{
   position: relative;
-  overflow-x: hidden;
 }
 
 .post-image{
@@ -107,7 +111,7 @@
   font-size: $font-size-sm;
   font-weight: $sans-light;
   font-style: italic;
-  color: sienna;
+  color: $brown;
 }
 
 .post-share-url{
@@ -121,7 +125,7 @@ input.post-share-url{
 }
 
 .btn-copy{
-  @include button-style(transparent, sienna, true, sienna);
+  @include button-style(transparent, $brown, true, $brown);
   padding: $space-xsm $space-sm;
   border-radius: .25rem;
   font-size: $font-size-xsm;
@@ -131,10 +135,10 @@ input.post-share-url{
 
   &:hover,
   &:focus{
-    @include button-style(sienna, antiquewhite);
+    @include button-style($brown, antiquewhite);
   }
 
   &:active{
-    @include button-style(saddlebrown);
+    @include button-style($dark-brown);
   }
 }

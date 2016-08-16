@@ -7,11 +7,16 @@
 
   {% include header.html %}
 
-  {% unless page.title == "Archive" %}
+  {% unless page.permalink == "/archive/" %}
   <div class="archive-link">
-    <a href="{{ site.baseurl }}/archive/">Search by Category</a>
+    <a href="{{ site.baseurl }}/archive/">Search Comics by Category</a>
   </div>
   {% endunless %}
+  {% if page.permalink == "/archive/" %}
+  <div class="archive-link">
+    <a href="{{site.posts[0].url | prepend:site.baseurl}}">Back to Comics</a>
+  </div>
+  {% endif %}
 
   <div class="container">
         {{ content }}

@@ -9,13 +9,28 @@ h1{
 
 h2{
   font-size: $font-size-xxlg;
+  line-height: 1.2;
 }
 
 h3{
   font-size: $font-size-xlg;
-  // text-transform: uppercase;
-  // letter-spacing: 0.25rem;
+  font-style: italic;
+  line-height: 1.2;
 }
+
+h3,
+h4,
+h5,
+h6{
+  font-family: $font-family-serif;
+}
+
+body {
+  font-family: $font-family-serif;
+  font-size: $font-size-reg;
+  line-height: 1.8;
+}
+
 
 @media (max-width: 700px){
   h1{
@@ -29,21 +44,12 @@ h3{
   h3{
     font-size: $font-size-lg;
   }
-}
 
-h3,
-h4,
-h5,
-h6{
-  font-family: $font-family-gothic;
-}
-
-body,
-span,
-p,
-a,
-button {
-  font-family: $font-family-sans;
-  font-size: $font-size-reg;
-  line-height: 1.5;
+  body,
+  span,
+  p,
+  a {
+    font-size: $font-size-sm;
+    line-height: 1.6;
+  }
 }

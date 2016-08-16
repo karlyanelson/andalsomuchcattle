@@ -1,0 +1,46 @@
+.category-list{
+  text-align: center;
+  margin: $space-lg 0;
+}
+
+.category-list-item{
+  @include transition(all ease $default-transition-speed);
+  display: inline-block;
+  text-transform: capitalize;
+  color: $brown;
+  border: 2px solid $brown;
+  padding: $space-xsm $space-sm;
+  border-radius: 1rem;
+  margin: $space-xsm;
+
+  &:hover,
+  &:focus{
+    background-color: $tan;
+    color: $white;
+    border-color: $tan;
+  }
+  &:active{
+    border-color: $brown;
+    background-color: $brown;
+    color: $white;
+  }
+}
+
+.category-section{
+  padding: $space-md 0;
+}
+
+.category-section-header{
+  text-transform: capitalize;
+}
+
+.category-post-list li{
+  color: $brown;
+  list-style-type: circle;
+}
+
+.category-post-list-item{
+  @extend .link;
+  font-weight: normal !important;
+  line-height: 1.2;
+}
