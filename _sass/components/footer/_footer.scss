@@ -7,7 +7,6 @@
   a{
     color: sienna;
     font-weight: bold;
-
     &:hover,
     &:focus,
     &:active{
@@ -54,10 +53,11 @@
   li{
     list-style: georgian;
     display: inline-block;
+    padding: 0 $space-xsm;
 
-    &:not(&:first-child):before{
-      margin:0 4px;
-      content: '•';
-    }
+    // &:not(&:first-child):before{
+    //   margin:0 4px;
+    //   content: '•';
+    // }
   }
 }

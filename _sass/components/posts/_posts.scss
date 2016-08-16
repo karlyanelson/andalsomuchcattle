@@ -5,6 +5,21 @@
   border-bottom: 2px solid wheat;
 }
 
+.archive-link{
+  text-align: center;
+  a {
+    font-family: $font-family-gothic;
+    color: sienna;
+    &:hover,
+    &:focus{
+      color: saddlebrown;
+    }
+    &:active{
+      color: black;
+    }
+  }
+}
+
 .post-nav{
   @extend %center;
   text-align: center;
@@ -45,6 +60,7 @@
   font-style: italic;
   font-weight: $sans-light;
   font-size: $font-size-xsm;
+  margin-top: 0px;
 }
 
 .post-description{
