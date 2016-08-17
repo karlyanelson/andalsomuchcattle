@@ -11,7 +11,7 @@
 }
 
 .footer-description{
-  max-width: 600px;
+  max-width: 40rem;
   @extend %center;
   p{
     color: $brown;
@@ -44,6 +44,9 @@
     margin: 0;
   }
   .verse-reference{
+    font-family: $font-family-serif;
+    font-style: italic;
+    font-size: $font-size-sm;
     display: block;
   }
 }

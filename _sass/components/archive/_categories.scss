@@ -7,21 +7,21 @@
   @include transition(all ease $default-transition-speed);
   display: inline-block;
   text-transform: capitalize;
-  color: $brown;
-  border: 2px solid $brown;
+  color: $light-gold;
+  border: 2px solid $light-gold;
   padding: $space-xsm $space-sm;
   border-radius: 1rem;
   margin: $space-xsm;
 
   &:hover,
   &:focus{
-    background-color: $tan;
+    background-color: $light-gold;
     color: $white;
-    border-color: $tan;
+    border-color: $light-gold;
   }
   &:active{
-    border-color: $brown;
-    background-color: $brown;
+    border-color: $gold;
+    background-color: $gold;
     color: $white;
   }
 }
@@ -32,15 +32,24 @@
 
 .category-section-header{
   text-transform: capitalize;
+  color: $gold;
 }
 
 .category-post-list li{
-  color: $brown;
-  list-style-type: circle;
+  color: $gold;
+  // list-style-type: circle;
 }
 
 .category-post-list-item{
-  @extend .link;
-  font-weight: normal !important;
+  @include transition(all ease $default-transition-speed);
+  color: $dark-gold;
   line-height: 1.2;
+  &:hover,
+  &:focus{
+    color: $gold;
+    text-decoration: underline;
+  }
+  &:active{
+    color: $dark-gold;
+  }
 }

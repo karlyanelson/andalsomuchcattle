@@ -44,16 +44,47 @@ layout: default
         </div>
         {% endfor %}
       </div>
+      <div class="comic-copyright">
+        <p>&copy; <span>{{post.date | date:'%Y'}} Karly Nelson</span></p>
+      </div>
     </div>
-
-    <div class="post-description">
-      {{ post.content }}
-    </div>
-
-    <p class="post-permalink">Permalink: <span class="permalink">{{post.permalink | prepend: site.baseurl | prepend: site.url}}</span></p>
-
   </div>
 
 </article>
+
+<div class="post-share">
+  <div class="share-permalink">
+    <p class="post-share-title">Permanent link to this comic</p>
+    <input class="post-share-url" id="comicLink" value="{{post.url | prepend: site.baseurl | prepend: site.url}}">
+  </div>
+
+  <div class="share-image">
+    <p class="post-share-title">Image URL</p>
+    <input class="post-share-url" id="imageURL" value="{{site.baseurl | prepend: site.url}}/images/{{post.image_folder}}/{{post.original_image}}">
+  </div>
+
+</div>
+
+<div class="post-nav">
+  {% if site.posts.last.url == site.posts[0].url %}
+  <button class="btn" disabled="true">&alpha;</button>
+  {% else %}
+  <a class="btn" href="{{site.posts.last.url | prepend:site.baseurl}}">&alpha;</a>
+  {% endif %}
+
+  {% if site.posts[1].url %}
+  <a class="btn" href="{{site.posts[1].url | prepend:site.baseurl}}">Previous</a>
+  {% else %}
+  <button class="btn" disabled="true">Previous</button>
+  {% endif %}
+
+  <button class="btn" disabled="true">Next</button>
+
+  <button class="btn" disabled="true">&Omega;</button>
+</div>
+
+<div class="post-description">
+  {{ post.content }}
+</div>
 
 {% endfor %}

@@ -7,14 +7,15 @@ a{
 }
 
 .link {
-  color: $brown;
+  @include transition(all ease $default-transition-speed);
+  color: $gold;
   font-weight: bold;
   &:hover,
   &:focus{
-    color: $dark-brown;
+    color: $dark-gold;
     text-decoration: underline;
   }
   &:active{
-    color: $black;
+    color: $brown;
   }
 }
