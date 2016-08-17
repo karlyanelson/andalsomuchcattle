@@ -37,10 +37,10 @@
   margin-top: $space-md;
   .bible-verse{
     font-family: $font-family-gothic;
-    font-style: normal;
     color: $tan;
     font-size: $font-size-lg;
     line-height: 1.2;
+    letter-spacing: 0.05em;
     margin: 0;
   }
   .verse-reference{

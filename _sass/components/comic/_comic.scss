@@ -18,7 +18,7 @@
 .comic-strip-row-title{
   @include flex(1 0 100%);
   &:not(:first-of-type){
-    margin-top: $space-md;
+    margin-top: 2rem;
   }
 }
 

@@ -26,13 +26,19 @@
   }
 }
 
+.category-sections-wrapper{
+  @include display(flex);
+  @include flex-wrap(wrap);
+}
+
 .category-section{
+  @include flex(1 0 50%);
   padding: $space-md 0;
 }
 
 .category-section-header{
   text-transform: capitalize;
-  color: $brown;
+  color: $gold;
 }
 
 .category-post-list {
@@ -68,5 +74,11 @@
   }
   &:active{
     color: $dark-gold;
+  }
+}
+
+@media (max-width:700px){
+  .category-section{
+    @include flex(1 0 100%);
   }
 }
