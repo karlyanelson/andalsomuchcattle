@@ -11,7 +11,7 @@
 }
 
 .footer-description{
-  max-width: 40rem;
+  max-width: $max-width-sm;
   @extend %center;
   p{
     color: $brown;

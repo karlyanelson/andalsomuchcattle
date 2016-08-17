@@ -29,6 +29,7 @@ body {
   font-family: $font-family-serif;
   font-size: $font-size-reg;
   line-height: 1.8;
+  color: $dark-brown;
 }
 
 
@@ -42,7 +43,7 @@ body {
   }
 
   h3{
-    font-size: $font-size-lg;
+    font-size: $font-size-reg;
   }
 
   body,

@@ -13,7 +13,7 @@ permalink: /archive/
   <h3 id="{{ tag[0] | slugify }}" class="category-section-header">{{ tag[0] }}</h3>
   <ul class="category-post-list">
     {% for post in tag[1] reversed %}
-    <li><a class="category-post-list-item" href="{{ post.url | prepend:site.baseurl}}">{{post.number}}: {{post.title}}</a></li>
+    <li><span class="post-number">#{{post.number}}</span> <a class="category-post-list-item" href="{{ post.url | prepend:site.baseurl}}">{{post.title}}</a></li>
     {% endfor %}
   </ul>
 </div>

@@ -32,18 +32,35 @@
 
 .category-section-header{
   text-transform: capitalize;
-  color: $gold;
+  color: $brown;
 }
 
-.category-post-list li{
-  color: $gold;
-  // list-style-type: circle;
+.category-post-list {
+  padding-left: $space-sm;
+
+  li{
+    list-style-type: none;
+    position: relative;
+    list-style-position: inside;
+    margin-bottom: $space-sm;
+  }
+
+  .post-number{
+    color: $gold;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
+
 
 .category-post-list-item{
   @include transition(all ease $default-transition-speed);
-  color: $dark-gold;
-  line-height: 1.2;
+  color: $dark-brown;
+  display: inline-block;
+  padding-left: $space-xlg;
   &:hover,
   &:focus{
     color: $gold;
