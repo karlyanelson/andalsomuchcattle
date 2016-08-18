@@ -4,26 +4,7 @@
 }
 
 .category-list-item{
-  @include transition(all ease $default-transition-speed);
-  display: inline-block;
-  text-transform: capitalize;
-  color: $light-gold;
-  border: 2px solid $light-gold;
-  padding: $space-xsm $space-sm;
-  border-radius: 1rem;
-  margin: $space-xsm;
-
-  &:hover,
-  &:focus{
-    background-color: $light-gold;
-    color: $white;
-    border-color: $light-gold;
-  }
-  &:active{
-    border-color: $gold;
-    background-color: $gold;
-    color: $white;
-  }
+  @extend .pill;
 }
 
 .category-sections-wrapper{

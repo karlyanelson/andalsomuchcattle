@@ -54,5 +54,12 @@ layout: default
 {% include post-nav.html %}
 
 <div class="post-description">
-  {{ content }}
+  <div class="post-description-text">
+    {{ content }}
+  </div>
+  <div class="post-tags">
+    {% for tag in page.categories %}
+    <a href="{{ site.baseurl }}/archive/#{{ tag | slugify }}" class="pill">{{ tag }}</a>
+    {% endfor %}
+  </div>
 </div>
