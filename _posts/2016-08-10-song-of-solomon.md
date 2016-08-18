@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I take the Bible literally"
+title:  "Sheep Teeth"
 date:   2016-08-10
 number: 1
 categories: [old testament, solomon, song of songs]
