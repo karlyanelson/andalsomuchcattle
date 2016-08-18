@@ -25,11 +25,7 @@ images:
     frame_type: "frame-1-1"
 ---
 
-Song of Solomon is pretty ridiculous, but it has some nuggets: "For love is strong as death,
-    jealousy is fierce as the grave.Its flashes are flashes of fire,
-    the very flame of the Lord.
-Many waters cannot quench love,
-    neither can floods drown it.""
+Song of Solomon is pretty ridiculous, but it has some nuggets: "For love is strong as death, jealousy is fierce as the grave. Its flashes are flashes of fire, the very flame of the Lord. Many waters cannot quench love, neither can floods drown it."
 
 My favorite Song of Solomon memory (if one can have such things), is doing a dramatic reading of it with my small group at camp one summer. They spent the rest of the week going "*climb* my palm tree."
 
