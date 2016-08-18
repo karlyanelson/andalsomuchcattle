@@ -19,7 +19,4 @@ images:
     frame_type: "frame-1-1"
 ---
 
-what do you [want]{:target="_blank"} girl?
-
-
-[want]:https://www.youtube.com/watch?v=E1I0hAxGFXw
+Dem locusts tho
