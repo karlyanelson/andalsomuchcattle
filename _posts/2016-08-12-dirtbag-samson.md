@@ -13,11 +13,7 @@ images:
     frame_type: "frame-1-1"
 ---
 
-[If you braid my hair I'll lose my strength I swear, babe.][1]"  
-
-
-
-Ah, Samson and Delilah. Such a classic love story. Boy meets girl. Girl agrees to hand him over the Philistines. Boy messes with her. Girl nags him into revealing the secret of his strength. Boy is blinded and imprisoned. Boy pulls down the pillars of the temple and kills everyone.
+[If you braid my hair I'll lose my strength I swear, babe.][1]" Ah, Samson and Delilah. Such a classic love story. Boy meets girl. Girl agrees to hand him over the Philistines. Boy messes with her. Girl nags him into revealing the secret of his strength. Boy is blinded and imprisoned. Boy pulls down the pillars of the temple and kills everyone.
 
 Samson is crazy. Ties torches to the tails of a bunch of foxes and burns down a bunch of people's fields 'cause his dad accidentally gave his wife to another man. Like you do. Kills a thousands dudes with a donkey jawbone.  And his story ends with "Thus he killed many more when he died than while he lived." Yay?
 
