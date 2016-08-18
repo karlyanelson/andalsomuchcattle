@@ -172,7 +172,7 @@ input.post-share-url{
   }
 }
 
-@media (max-width:700px){
+@media (max-width:#{$media-md}){
   .post{
     padding: $space-reg $space-reg;
     margin: $space-reg 0px;

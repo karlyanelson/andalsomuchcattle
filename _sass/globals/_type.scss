@@ -32,7 +32,7 @@ body {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: #{$media-md}){
   h1{
     font-size: $font-size-xxlg;
   }
