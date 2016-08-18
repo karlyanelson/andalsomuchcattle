@@ -2,7 +2,6 @@
   @extend %center;
   max-width: $max-width;
   text-align: center;
-  margin-bottom: $space-lg;
   padding: $space-sm;
 
   a{
@@ -66,5 +65,29 @@
     list-style: georgian;
     display: inline-block;
     padding: 0 $space-xsm;
+  }
+}
+
+.github-link{
+  display: inline-block;
+  margin-top: $space-md;
+  svg{
+    width: $space-lg;
+    path{
+      fill: $light-gold;
+    }
+  }
+
+  &:hover,
+  &:focus{
+    svg path{
+      fill: $gold;
+    }
+  }
+
+  &:active{
+    svg path{
+      fill: $dark-gold;
+    }
   }
 }
