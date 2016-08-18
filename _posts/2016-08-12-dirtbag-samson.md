@@ -13,7 +13,7 @@ images:
     frame_type: "frame-1-1"
 ---
 
-"[If you braid my hair I'll lose my strength I swear, babe.][1]"  
+[If you braid my hair I'll lose my strength I swear, babe.][1]"  
 
 Ah, Samson and Delilah. Such a classic love story. Boy meets girl. Girl agrees to hand him over the Philistines. Boy messes with her. Girl nags him into revealing the secret of his strength. Boy is blinded and imprisoned. Boy pulls down the pillars of the temple and kills everyone.
 
