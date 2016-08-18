@@ -13,11 +13,13 @@ images:
     frame_type: "frame-1-1"
 ---
 
-Ah, Samson and Delilah. The Bible's first rom-com. Samson could've asked for a lot cooler stuff, just sayin. "[If you braid my hair I'll lose my strength I swear, babe.][1]"
+"[If you braid my hair I'll lose my strength I swear, babe.][1]"  
 
-Missed opportunities, I tell ya.
+Ah, Samson and Delilah. Such a classic love story. Boy meets girl. Girl agrees to hand him over the Philistines. Boy messes with her. Girl nags him into revealing the secret of his strength. Boy is blinded and imprisoned. Boy pulls down the pillars of the temple and kills everyone.
 
-Also [this][2] is funny and vaguely related.
+Samson is crazy. Ties torches to the tails of a bunch of foxes and burns down a bunch of people's fields 'cause his dad accidentally gave his wife to another man. Like you do. Kills a thousands dudes with a donkey jawbone.  And his story ends with "Thus he killed many more when he died than while he lived." Yay?
+
+Also [this][2] is funny and somewhat related.
 
 [1]:https://www.biblegateway.com/passage/?search=Judges+16&version=NIV
 [2]:http://the-toast.net/2014/11/17/bible-verses-word-philistines-replaced-haters/
