@@ -12,7 +12,7 @@ Used [this] article to create my Archive page without using any plugins.
 Jekyll has some great capabilities using categories/tags.
 
 
-[logo]:andalsomuchcattle.com/css/img/logo.svg
+[logo]:https://github.com/karlyanelson/andalsomuchcattle/raw/gh-pages/logo.svg
 [flex-box]:https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 [this]:https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/
 [Jekyll]:http://jekyllrb.com
