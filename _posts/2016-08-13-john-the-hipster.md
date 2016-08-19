@@ -18,6 +18,6 @@ images:
     alt: this is the alt text
     frame_type: "frame-1-1"
 ---
-John the Baptist is great. Man, what a family. One cousin is basically Elijah come again, and the other is the Messiah. Do you think Mary and Elizabeth ever hung out when they were older and were like, "Hey, remember when our kids fulfilled thousands of years of prophecy? That was neat."
+John the Baptist is great. Man, what a family. One cousin is a prophet, and the other is the Messiah. Do you think Mary and Elizabeth ever hung out when they were older and were like, "Hey, remember when our kids fulfilled thousands of years of prophecy? That was neat."
 
 The Kingdom of Heaven would be sick band name, though.  
