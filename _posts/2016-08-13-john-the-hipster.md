@@ -2,10 +2,10 @@
 layout: post
 title:  "Organic Baptisms Here"
 date:   2016-08-13
-number: 3
+number: 2
 categories: [new testament, john the baptist, gospels]
-permalink: /3
-image_folder: 3
+permalink: /2
+image_folder: 2
 original_image: john-the-hipster.jpg
 images:
   - url: 1.jpg
