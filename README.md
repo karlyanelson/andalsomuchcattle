@@ -4,13 +4,13 @@
 
 *"A merry heart doeth good like a medicine: but a broken spirit drieth the bones." Prov. 17:22*
 
-## Created Using Jekyll
+### Created Using Jekyll
 [Jekyll] is a static site generator, with great blogging/posting capabilities.
 
-## Responsive Comic Strip Layout
+### Responsive Comic Strip Layout
 Uses [flex-box] to create a responsive comic strip layout. See [web-comic.css] on Github for more details.
 
-## Comics by Category
+### Comics by Category
 Used [this] article to create my Archive page without using any plugins.
 Jekyll has some great capabilities using categories/tags.
 
