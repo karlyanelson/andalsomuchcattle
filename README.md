@@ -12,7 +12,7 @@ Uses [flex-box] to create a responsive comic strip layout. See [web-comic.css] o
 
 ### Comics by Category
 Used [this] article to create my Archive page without using any plugins.
-Jekyll has some great capabilities using categories/tags.
+Jekyll has some cool things you can do with categories/tags.
 
 
 [logo]:https://github.com/karlyanelson/andalsomuchcattle/blob/gh-pages/logo.png
