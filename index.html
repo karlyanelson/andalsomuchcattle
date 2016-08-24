@@ -30,7 +30,13 @@ layout: default
 
   <header class="post-header">
     <h2 class="post-title" itemprop="name headline">{{ post.title }}</h2>
-    <p class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
+    <p class="post-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign d = post.date | date: "%-d" %}
+        {% assign m = post.date | date: "%-m" %}
+        The {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} day of the {% case m %}{% when '1' or '21' or '31' %}{{ m }}st{% when '2' or '22' %}{{ m }}nd{% when '3' or '23' %}{{ m }}rd{% else %}{{ m }}th{% endcase %} month in the year of our Lord {{ post.date | date: "%Y" }}
+      </time>
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
