@@ -83,22 +83,18 @@
   min-height: 4.5rem + $space-xxlg;
 }
 
-.post-tags{
-  margin: $space-reg 0;
-  padding: 0 $space-md;
-}
-
 .post-description-text{
   padding: $space-sm $space-md;
 
   //drop caps
   p:first-of-type:first-letter {
     float: left;
-    color: $gold;
-    font-family: $font-family-gothic;
+    color: $light-gold;
+    text-shadow: 1px 1px 1px $gold;
+    font-family: $font-family-drop-cap;
     font-style: normal;
-    font-size: 4.5em;
-    line-height: 1;
+    font-size: 4.75em;
+    line-height: 70px;
     padding-top: $space-xsm;
     padding-right: $space-sm;
     padding-left: $space-xsm;
@@ -108,6 +104,12 @@
     @extend .link;
   }
 }
+
+.post-tags{
+  margin: $space-reg 0;
+  padding: 0 $space-md;
+}
+
 
 .post-content{
   position: relative;

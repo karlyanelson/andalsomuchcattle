@@ -4,12 +4,12 @@ title: Comics by Category
 permalink: /archive/
 ---
 <div class="category-list">
-  {% for tag in site.categories %}
+  {% for tag in site.categories | sort %}
   <a href="#{{ tag[0] | slugify }}" class="category-list-item">{{ tag[0] }}</a>
   {% endfor %}
 </div>
 <div class="category-sections-wrapper">
-  {% for tag in site.categories %}
+  {% for tag in site.categories | sort %}
   <div class="category-section">
     <h3 id="{{ tag[0] | slugify }}" class="category-section-header">{{ tag[0] }}</h3>
     <ul class="category-post-list">

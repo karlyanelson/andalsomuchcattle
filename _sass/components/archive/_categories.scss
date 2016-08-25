@@ -19,7 +19,8 @@
 
 .category-section-header{
   text-transform: capitalize;
-  color: $gold;
+  color: $light-gold;
+  text-shadow: 1px 1px 1px $gold;
 }
 
 .category-post-list {
