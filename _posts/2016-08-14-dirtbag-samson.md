@@ -6,10 +6,10 @@ number: 3
 categories: [old testament, judges, samson, dirtbags]
 permalink: /3
 image_folder: 3
-original_image: dirtbag-samson.jpg
+original_image: dirtbag-samson.png
 images:
-  - url: dirtbag-samson.jpg
-    alt: this is the alt text
+  - url: 1.svg
+    alt: This convertible will totally make me lose my strength, I swear babe.
     frame_type: "frame-1-1"
 ---
 
