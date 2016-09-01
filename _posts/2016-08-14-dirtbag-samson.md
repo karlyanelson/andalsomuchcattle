@@ -3,7 +3,8 @@ layout: post
 title:  "Dirtbag Samson"
 date:   2016-08-14
 number: 3
-categories: [old testament, judges, samson, dirtbags]
+categories: [Old Testament]
+tags: [dirtbags]
 permalink: /3
 image_folder: 3
 original_image: dirtbag-samson.png

@@ -3,7 +3,7 @@ layout: post
 title:  "Sheep Teeth"
 date:   2016-08-10
 number: 1
-categories: [old testament, solomon, song of songs]
+categories: [Old Testament]
 permalink: /1
 image_folder: 1
 original_image: song-of-solomon.jpg
