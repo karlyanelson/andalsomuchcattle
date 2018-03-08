@@ -12,8 +12,8 @@ description: A webcomic of the Bible, Christianity, and puns by Karly Nelson, wi
 url: "http://andalsomuchcattle.com" # the base hostname & protocol for your site
 
 # Gems
-gems:
-  -jekyll-paginate
+plugins:
+  - jekyll-paginate
 
 # Build settings
 markdown: kramdown
