@@ -10,6 +10,7 @@
 
 .site-title-link{
   @include transition(all ease 300ms);
+  display: block;
 
   .svg-main-fill{
     fill: $light-tan;
@@ -45,7 +46,8 @@
   &:hover,
   &:focus{
     .svg-main-fill{
-      fill: $light-tan;
+      // fill: $light-tan;
+      fill: #fbd4a4;
     }
 
     .svg-shadow-fill{
@@ -59,10 +61,15 @@
     .svg-site-title{
       fill: $gold;
     }
+
+    .svg-site-title-shadow {
+      fill: #f3c690;
+    }
   }
   &:active{
     .svg-main-fill{
-      fill: $light-tan;
+      // fill: $light-tan;
+      fill: #fbd4a4;
     }
 
     .svg-shadow-fill{
@@ -75,6 +82,10 @@
 
     .svg-site-title{
       fill: $dark-gold;
+    }
+
+    .svg-site-title-shadow {
+      fill: #f3c690;
     }
   }
 }
