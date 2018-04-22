@@ -1,6 +1,6 @@
 ![# And Also Much Cattle][logo]
 
-####A webcomic of the Bible, Christianity, and puns by Karly Nelson, with contributions from Caroline Grossman and Kristen O'Neal.
+#### A webcomic of the Bible, Christianity, and puns by Karly Nelson, with contributions from Caroline Grossman and Kristen O'Neal.
 
 *"A merry heart doeth good like a medicine: but a broken spirit drieth the bones." Prov. 17:22*
 
